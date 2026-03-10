@@ -1,11 +1,15 @@
 1.0 Introduction
+
 1.1 Project overview
+
 Cabin routine is a pixel style caretaker simulation game where the player manages and maintains a small cabin environment. The player must complete daily tasks such as cleaning, repairing, feeding animals, and managing resources while balancing time and energy. There is no combat. A failure state when the needs are not met for example energy or lack of resources. The project’s aim is to create a low stress experience where the player finds meaning in simple tasks. Through exploration of the game the player uncovers a story told entirely through environment and audio feedback.
 
 1.2 Purpose of Document 
+
 This document acts as a reference throughout development to ensure the project stays aligned with original goals. It entails the full design, development and technical structure of the game.
 
 1.3 Target platform 
+
 - Windows PC
 - Mac OS
 - Minimum specifications
@@ -14,6 +18,7 @@ This document acts as a reference throughout development to ensure the project s
     - Storage: 500 MB
 
 1.4 Target Audience
+
 Players aged 20+ as this age range is more likely to seek a gaming experience that is relaxing and has emotional resonance. 
 
 2.0 User and system requirements
@@ -62,4 +67,5 @@ Product backlog is organised into epics. Each epic contains multiple user storie
 
 | Story | Epic | Points | 
 | ----- | ---- | ------ |
-
+| As a player, I want to move my character through the environmment so that I can explore the cabin and surrounding areas. | Movement | 5 | 
+| As a Player, I want to interact with objects in the world so that I can clean and repair the space. | Interaction | 8 |
