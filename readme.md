@@ -69,3 +69,68 @@ Product backlog is organised into epics. Each epic contains multiple user storie
 | ----- | ---- | ------ |
 | As a player, I want to move my character through the environmment so that I can explore the cabin and surrounding areas. | Movement | 5 | 
 | As a Player, I want to interact with objects in the world so that I can clean and repair the space. | Interaction | 8 |
+| As a Player, I want the game world to remember what I have cleaned or fixed so that my progress feels permanent. | Persistence | 5 |
+| As a player, I want to access my inventory so that I can see what tools and items I am carrying | UI | 3 | 
+| As a player, I want to save my progress so that I can return later without lsoing accomplishments. | Persistence | 5 |
+| As a player, I want weather to occasionally change so the environment feels dynamic. | Atmosphere | 5 | 
+| As a player, I want to examine discovered narrative objects so I can reflect on their meaning. | Narrative | 5 | 
+| As a player, I want haptiic feedback when using tools so actions feel more satisfying. | Interaction | 3 | 
+| As a player, I want seperate volume controls so I can customise my experience. | Accessibility | 2 | 
+| As a player, I want contextual prompts so I know what I can interact with. | UI | 3 | 
+| As a player, I want to store keepsakes in a special box so I can see my collection. | Narrative | 3 | 
+| As a player, I want to sit on chairs so I can rest and take in the atmosphere. | Interaction | 2 | 
+
+3.3 Definitoin of Done 
+
+A user story is considered complete when: 
+1. All acceptance criteria have been met.
+2. All associated tese have passed.
+3. Code has been reviewed by at least one other team member.
+4. Feature has been tested on target hardware.
+5. Documentation has been updated if necessary.
+6. No new bugs have been introduced.
+
+3.4 Burndown Chat Tracking 
+
+| Sprint  | Planned Points | Completed Points | Cumulative Completed | 
+| ------- | -------------- | ---------------- | -------------------- |
+| Sprint 1| 21 | 21 | 21 |
+| Sprint 2| 21 | 18 | 39 |
+| Sprint 3| 21 | 21 | 60 |
+| Sprint 4| 21 | 21 | 81 |
+| Sprint 5| 13 | 13 | 94 |
+| Sprint 6| 8  |  8 | 102|
+
+4.0 Detailed Design Documentation 
+
+4.1 Overall Game Design 
+
+4.1.1 Game Concept 
+
+CabinRoutine is a meditative game about tending to a forgotten cabin in the woods. Through simple daily tasks, the player pieces together the story of the place. There are no objectives, no timers and no way to fail only a space to care for and a story to discover. 
+
+4.1.2 Core Game Loop
+
+The player observes the environment, noticing elements that draw their attention. They choose to act, using apporpriate tools to clean or repair what they have noticed. Completing actions reveal discoveries, physical objects or audio fragments. The player reflects on what they have found and the cycle continues organically based on their curiosity. 
+
+4.1.3 Design Pillars 
+
+- Tactile Maintenance: All interactions feel physically satisfying through animation, sound and haptics.
+- Atmospheric Storytelling: Narrative emerges from environment and audio, never from text
+- Mindful Exploration: No direction, no pressure, no punishment the player moves at their own pace.
+
+4.2 Story and Narrative Design 
+
+4.2.1 Story Summary 
+
+A traveller hiking through remote woodland discovers a small cabin. The cabin is neglected but not abandoned. Something draws the traveller to stay. As they clean and repair the space, they begin to experience auditory echoes fragments of sound from the past. 
+
+4.2.2 Narrative Delivery Method 
+
+All narrative is delivered through: 
+
+- Audio fragments: Brief, ethereal sounds triggered by player presence and actions
+- Environmental objects: Items that imply aspects of the occupant's life and personality
+- Keepsake examination: Closer inspection of discovered items may trigger additional audio
+
+No text, dialogue boxes or exposition are used. 
