@@ -21,6 +21,38 @@ This document acts as a reference throughout development to ensure the project s
 
 Players aged 20+ as this age range is more likely to seek a gaming experience that is relaxing and has emotional resonance. 
 
+Evaluation of Development Mothodologies
+
+Waterfall Model 
+
+The Waterfall model has sequential phases. Each phase assumes that all requirements are known and specified at the start. Atmosphere and emotional response are the main goals here so a feature might function perfectly but not match the intended goal. 
+
+Features that function correctly according to specification may still fail to achieve desired player experience. The Waterfall model provides no mechanism for revisiting earlier decisions based on such insights. Therefore, this methodology was not used. 
+
+Spiral Model
+
+The spiral model was also considered. This is a risk driven approach cycles through four phases: determining objectives, identifying and resolving risks, development and testing and planning the next iteration.
+
+While the iterative nature was appealing, the models focus on technical risk identification and mitigation was not aligned with project needs. The primary risks in this project were creative achieving desired emotional tone, appropriate narrative pacing and player engagement. These are not the technical risks the Spiral model was designed to address. The model was therefore not used for this project. 
+
+Agile Methodologies 
+
+Agile emphasises on working software, customer collaboration and responding to change aligned with project requirements.
+
+Within this model there are two frameworks that were examined in detail:
+
+Extreme programming (xp)
+Extreme Programming offers practices including test driven develpoment and pair programming. While valuable, the engineering focused practices felt somewhat heavyweight for a project of this scale. The emphasis on rapid releases was not inline with the project and was not chosen.
+
+Scrum 
+Scrum emerged as the most appropriate framework. 
+
+- Timeboxed iteration of consistent duration
+- Regular sprint reviews
+- 
+
+
+
 2.0 User and system requirements
 
 2.1 User Stories
@@ -50,18 +82,7 @@ Functional requirements
 | Weather system | System will occasionally have a rainy state with appropriate audio changes. |
 | Subtitle System | Subtitles will be displayed for all effects when enabled. | 
 
-3.1 Epic structure 
 
-Product backlog is organised into epics. Each epic contains multiple user stories with associated tasks, acceptance criteria and story point estimates. 
-
-| Epic | Description | Priority | Story Points |
-| ---- | ----------- | -------- | ------------ |
-| Player Movement and controls | All functionality related to moving the player character through the world and controlling the camera. | Critical | 13 | 
-| Object Interaction | Systems for identifying, approaching and manipulating interactive objects in the environment. | Critical | 21 |
-| World persistence | Saving and loading game state, maintaining object states across sessions. | High | 13 |
-| Audio System | All audio funstionality including ambient layers and interactive sounds. | Critical | 21 | 
-| Narrative delivery | Systems for triggering and managing narrative audio fragments and keepsake objects. | High | 13 |
-| U ser Interface | Inventory displays, pause menu, settings screens and all UI elements. | Medium | 8 |
 
 3.2 Complete Product Backlog
 
@@ -90,16 +111,6 @@ A user story is considered complete when:
 5. Documentation has been updated if necessary.
 6. No new bugs have been introduced.
 
-3.4 Burndown Chat Tracking 
-
-| Sprint  | Planned Points | Completed Points | Cumulative Completed | 
-| ------- | -------------- | ---------------- | -------------------- |
-| Sprint 1| 21 | 21 | 21 |
-| Sprint 2| 21 | 18 | 39 |
-| Sprint 3| 21 | 21 | 60 |
-| Sprint 4| 21 | 21 | 81 |
-| Sprint 5| 13 | 13 | 94 |
-| Sprint 6| 8  |  8 | 102|
 
 4.0 Detailed Design Documentation 
 
@@ -123,7 +134,7 @@ The player observes the environment, noticing elements that draw their attention
 
 4.2.1 Story Summary 
 
-A traveller hiking through remote woodland discovers a small cabin. The cabin is neglected but not abandoned. Something draws the traveller to stay. As they clean and repair the space, they begin to experience auditory echoes fragments of sound from the past. 
+A traveller hiking through remote woodland discovers a small cabin. The cabin is neglected but not abandoned. Something draws the traveller to stay. As they clean and repair the space, they begin to experience auditory echoes fragments of sound for a full immersion experience.
 
 4.2.2 Narrative Delivery Method 
 
@@ -134,3 +145,59 @@ All narrative is delivered through:
 - Keepsake examination: Closer inspection of discovered items may trigger additional audio
 
 No text, dialogue boxes or exposition are used. 
+
+4.3 Characters
+
+4.3.1 The Player Character 
+
+| Attribute | Description |
+| --------- | ----------- |
+| Visibility | First person perspective | 
+| Motivation | Implied through action | 
+
+The player character is a blank slate, allowing players to project themselves into the role. 
+
+4.4 Environment and Level Design 
+
+4.4.1 World structure 
+
+The game world is a single persistent map divided into four zones:
+
+| Zone | Key features | 
+| ---- | ------------ |
+| Cabin interior | Fireplace, bookshelves, kitchen, sleeping loft |
+| Porch | Rocking chair, railing, view of clearing |
+| Clearing | Woodpile, garden patch, bench |
+| Stream Path | Winding trail, stream, sitting rock | 
+
+4.4.2 Interactive Object placement
+
+| Zone | Interactive objects |
+| Cabin interior | broom, cloth, hammer, lantern, fireplace |
+| Porch | Rocking chair (sit) |
+| Clearing | Axe, woodpile, garden tools |
+| Stream path | Sitting rock |
+
+4.5 Gameplay Mechanics
+
+4.5.1 Core mechanics 
+
+Movement system:
+- 4 direction movement
+- Collision detection with all solid objects
+
+Interaction system:
+- Area based detection
+- Contextual action based on held tool
+- Animation triggers baed on successful interaction
+- Visual state change
+
+Tool system:
+
+| Tool | Action | Required for |
+| ---- | ------ | ------------ |
+| Broom | Sweep floors | Dusty surfaces | 
+| Cloth | Wipe surfaces | Dirty surfaces |
+
+
+
