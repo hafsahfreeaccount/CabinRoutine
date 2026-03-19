@@ -2,7 +2,7 @@
 Table of contents
 - [Introduction](#introduction)
 - [Software tools](#software-tools)
-- [Coding Techniques](#coding techniques)
+- [Coding Techniques](#coding-techniques)
 - [Research](#research)
 - [User Requirements](#user-requirements)
 - [Scrum style stories](#scrum-style-stories)
@@ -10,7 +10,7 @@ Table of contents
 - [Overall Design](#overall-design)
 - [Game Story](#game-story)
 - [Design Strategy](#design-strategy)
-- [Development Strategy] (#development-strategy)
+- [Development Strategy](#development-strategy)
 - [Programming laguage](#programming-language)
 - [User Interface and controls](#user-interface-and-controls)
 - [Game loop](#game-loop)
