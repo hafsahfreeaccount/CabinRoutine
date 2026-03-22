@@ -194,7 +194,10 @@ The wall tiles are pixel art assets used to construct the cabin environment. The
 | Time progresion | Actions advance time. Certain tasks available at certain times | Encourages varied play patterns |
 | Task optionality | No required objectives | Supports relaxed gameplay and player freedom | Task completion | Completing tasks improves the cabin's condition | Reinforces progress and player impact | 
 ## Gameplay 
-The gameplay is centred around completing small repeatable tasks within the cabin environment. The player moves around the space, interacts with objects, manages limited energy while progressing through time. The core loop involves identifying tasks, completing them and observing changes in the environment. The design promotes a relaxed place, allowing players to engage with the game without pressure while still maintaining a sense of progression and purpose.
+
+<img width="432" height="613" alt="image" src="https://github.com/user-attachments/assets/a61e5f6d-4eeb-4f43-97ed-8c8c00209227" />
+
+The gameplay is centred around completing small repeatable tasks within the cabin environment. The player moves around the space, interacts with objects, manages limited energy while progressing through time. The core loop involves identifying tasks, completing them and observing changes in the environment. The design promotes a relaxed place, allowing players to engage with the game without pressure while still maintaining a sense of progression and purpose. Storyboard created in figma.
 ## Backlog
 The product backlog was organised using the MoSCow method (Must have, Should have, Could have, Won't have). This prioritisation framework ensured that critical features were delivered even if the scope needed adjustment. 
 ### Product backlog
