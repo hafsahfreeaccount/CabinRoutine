@@ -86,10 +86,14 @@ Functional requirements
 8. As a player, I want weather to occasionally change so that the environment feels dynamic and varied.
 9. As a player, I want subtitles for all audio so that I can understand the narrative if I have hearing difficulties.
 
-## System requirements
 ## Overall Design
+Cabin Routine is a pixel art 2D simulation game. Focused on managing and maintaining a small cabin environment. The design focuses on simplicity and routine based gameplay. Players complete daily tasks such as cleaning, repairing and organising. The user interface is minimalistic to match the calm atmosphere. The visual style uses soft colours and simple sprites to create a relaxing and immersive experience.
+
 ## Game story
+The game follows a lone caretaker responsible for maintaining a remote cabin. While the story is minimal, it is told through the environment and the players daily actions. The cabin gradually changes based on how well it is maintained, reflecting the player's effort and progress. This allows players to create their own narrative. 
+
 ## Design strategy
+The design strategy focuses on iterative development. A simplified version of the game is developed first to ensure core functions are working correctly before expanding.   The project follows structured development methods, incorporating elements of agile development such as regular reviews and task backlogs. This approach reduces risk, allows for continuous improvement and ensures the final game remains focused on its core gameplay experience. 
 ## Development Strategy
 ### Evaluation of strategies
 Several software development strategies were considered including Waterfall, Spiral, Extreme Programming (XP) and Scrum. 
