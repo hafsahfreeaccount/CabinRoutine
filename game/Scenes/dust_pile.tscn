@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://jg3yn8g428r4"]
+
+[ext_resource type="Texture2D" uid="uid://cgdk72va60bdg" path="res://Assets/Art/Objects/dust_pile.png" id="1_56ufy"]
+[ext_resource type="Script" uid="uid://ci5s8df2bh641" path="res://Scenes/dust_pile.gd" id="1_w3ruw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3ruw"]
+
+[node name="DustPile" type="Area2D" unique_id=1615352234]
+script = ExtResource("1_w3ruw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1604470358]
+shape = SubResource("RectangleShape2D_w3ruw")
+
+[node name="DustPile" type="Sprite2D" parent="." unique_id=125927005]
+texture = ExtResource("1_56ufy")
+
+[node name="Label" type="Label" parent="." unique_id=601446734]
+offset_right = 40.0
+offset_bottom = 23.0
